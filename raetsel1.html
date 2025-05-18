@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Rätsel 1</title>
+  <script>
+    function checkAnswer() {
+      const answer = document.getElementById('answer').value.toLowerCase();
+      if (answer === 'tastatur') {
+        window.location.href = 'raetsel2.html';
+      } else {
+        alert('Falsch! Versuch es nochmal.');
+      }
+    }
+  </script>
+</head>
+<body>
+  <h2>Rätsel 1: Was zeigt dieses Bild?</h2>
+  <img src="tastatur.jpg" alt="Tastatur" width="300"><br>
+  <input type="text" id="answer">
+  <button onclick="checkAnswer()">Weiter</button>
+</body>
+</html>

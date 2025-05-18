@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Rätsel 3</title>
+  <script>
+    function checkAnswer() {
+      const answer = document.getElementById('answer').value.toLowerCase();
+      if (answer === 'chamäleon' || answer === 'chamaeleon') {
+        window.location.href = 'spiel2.html';
+      } else {
+        alert('Leider falsch.');
+      }
+    }
+  </script>
+</head>
+<body>
+  <h2>Rätsel 3: Verstecktes Tier</h2>
+  <img src="chamaeleon.jpg" alt="Chamäleon" width="300"><br>
+  <input type="text" id="answer">
+  <button onclick="checkAnswer()">Weiter</button>
+</body>
+</html>

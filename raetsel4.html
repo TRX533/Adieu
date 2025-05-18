@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Rätsel 4</title>
+  <script>
+    function checkAnswer() {
+      const answer = document.getElementById('answer').value.toLowerCase();
+      if (answer === 'anna') {
+        window.location.href = 'spiel3.html';
+      } else {
+        alert('Versuch es nochmal!');
+      }
+    }
+  </script>
+</head>
+<body>
+  <h2>Rätsel 4: Wer sitzt in der Mitte?</h2>
+  <p>Anna sitzt links von Ben. Clara sitzt rechts von Anna.</p>
+  <input type="text" id="answer">
+  <button onclick="checkAnswer()">Weiter</button>
+</body>
+</html>

@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Rätsel 2</title>
+  <script>
+    function checkAnswer() {
+      const answer = document.getElementById('answer').value;
+      if (answer === '32') {
+        window.location.href = 'spiel1.html';
+      } else {
+        alert('Falsch!');
+      }
+    }
+  </script>
+</head>
+<body>
+  <h2>Rätsel 2: Zahlenfolge</h2>
+  <p>2 – 4 – 8 – 16 – ?</p>
+  <input type="text" id="answer">
+  <button onclick="checkAnswer()">Weiter</button>
+</body>
+</html>

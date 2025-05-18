@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Rätsel 5</title>
+  <script>
+    function checkAnswer() {
+      const answer = document.getElementById('answer').value.toLowerCase();
+      if (answer === 'kurz') {
+        window.location.href = 'finale.html';
+      } else {
+        alert('Leider falsch.');
+      }
+    }
+  </script>
+</head>
+<body>
+  <h2>Rätsel 5: Was wird beim Lesen kürzer?</h2>
+  <input type="text" id="answer">
+  <button onclick="checkAnswer()">Weiter</button>
+</body>
+</html>
